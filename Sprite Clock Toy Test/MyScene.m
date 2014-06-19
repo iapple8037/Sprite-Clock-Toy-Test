@@ -37,6 +37,8 @@
     YHToy *toy;
     CGPoint _touchPoint;
     NSInteger animationHour;
+    NSInteger animateMin;
+    NSInteger animateSec;
     //    NSTimer *timerAnimation;
 }
 
@@ -52,16 +54,22 @@
                                        selector:@selector(driveClock:) //呼び出すメソッド
                                        userInfo:nil         // ユーザ利用の情報オブジェクト
                                         repeats:YES];        // 繰り返し
-        //------------------------------------------------------------------------
-        
-        
-        
-        [self addClockImages];
-        [self createLondonbus];
-        [self createToyQueue];
-        [self createToy];
-        [self createGround];
     }
+    
+//    if (animationHour == 0 && animateMin == 27) {
+//
+//    [self createLondonbus];
+    //        [self createToyQueue];
+//    [self createToy];
+//    [self createGround];
+//    }
+    
+
+    [self addClockImages];
+    [self createGround];
+    [self createLondonbus];
+    [self createToy];
+    
     return self;
 }
 
@@ -109,9 +117,12 @@
     
     NSInteger hour = [todayComponents hour];
     NSInteger min = [todayComponents minute];
-    //    NSInteger second = [todayComponents second];
+    NSInteger sec = [todayComponents second];
     
-    animationHour = min;
+    animationHour = hour;
+    animateMin = min;
+    animateSec = sec;
+    
     NSLog(@"時間は%d", hour);
     NSLog(@"分は%d", min);
     //    NSLog(@"秒は%d", second);
@@ -165,11 +176,9 @@
 - (void) updateWithTimeSinceLastUpdate:(CFTimeInterval)timeSiceLast
 {
     self.lastSpawnTimeInterval += timeSiceLast;
-    if (self.lastSpawnTimeInterval > 4) {
+    if (self.lastSpawnTimeInterval > 4 ) {
         self.lastSpawnTimeInterval = 0;
-        //        if (animationHour == 12) {
-        //            [self createToyQueue];
-        //        }
+
         [self createToyQueue];
     }
 }
