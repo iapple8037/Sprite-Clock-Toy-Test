@@ -25,6 +25,24 @@
 		F50146EC1953005600459A79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50146C41953005600459A79 /* UIKit.framework */; };
 		F50146F41953005600459A79 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F50146F21953005600459A79 /* InfoPlist.strings */; };
 		F50146F61953005600459A79 /* Sprite_Clock_Toy_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F50146F51953005600459A79 /* Sprite_Clock_Toy_TestTests.m */; };
+		F50147001953009500459A79 /* ToyImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F50146FF1953009500459A79 /* ToyImages.atlas */; };
+		F501470E1953039500459A79 /* iPhoneTanshin.png in Resources */ = {isa = PBXBuildFile; fileRef = F501470A1953039500459A79 /* iPhoneTanshin.png */; };
+		F501470F1953039500459A79 /* iPhoneChaushin.png in Resources */ = {isa = PBXBuildFile; fileRef = F501470B1953039500459A79 /* iPhoneChaushin.png */; };
+		F50147101953039500459A79 /* iPhoneCenterPoint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F501470C1953039500459A79 /* iPhoneCenterPoint@2x.png */; };
+		F50147111953039500459A79 /* iPhoneCenterPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = F501470D1953039500459A79 /* iPhoneCenterPoint.png */; };
+		F5014719195303F600459A79 /* LandscapeCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = F5014713195303F600459A79 /* LandscapeCenter.png */; };
+		F501471A195303F600459A79 /* LandscapeCenter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5014714195303F600459A79 /* LandscapeCenter@2x.png */; };
+		F501471B195303F600459A79 /* LandscapeChoushin.png in Resources */ = {isa = PBXBuildFile; fileRef = F5014715195303F600459A79 /* LandscapeChoushin.png */; };
+		F501471C195303F600459A79 /* LandscapeChoushin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5014716195303F600459A79 /* LandscapeChoushin@2x.png */; };
+		F501471D195303F600459A79 /* LandscapeTanshin.png in Resources */ = {isa = PBXBuildFile; fileRef = F5014717195303F600459A79 /* LandscapeTanshin.png */; };
+		F501471E195303F600459A79 /* LandscapeTanshin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5014718195303F600459A79 /* LandscapeTanshin@2x.png */; };
+		F50147231953046700459A79 /* Group.png in Resources */ = {isa = PBXBuildFile; fileRef = F50147211953046700459A79 /* Group.png */; };
+		F50147241953046700459A79 /* Group@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F50147221953046700459A79 /* Group@2x.png */; };
+		F50147281953049200459A79 /* london_bus.png in Resources */ = {isa = PBXBuildFile; fileRef = F50147261953049200459A79 /* london_bus.png */; };
+		F50147291953049200459A79 /* london_bus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F50147271953049200459A79 /* london_bus@2x.png */; };
+		F50147311953052400459A79 /* YHToy.m in Sources */ = {isa = PBXBuildFile; fileRef = F501472C1953052400459A79 /* YHToy.m */; };
+		F50147321953052400459A79 /* YHToyQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F501472E1953052400459A79 /* YHToyQueue.m */; };
+		F50147331953052400459A79 /* YHLondonbus.m in Sources */ = {isa = PBXBuildFile; fileRef = F50147301953052400459A79 /* YHLondonbus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +80,27 @@
 		F50146F11953005600459A79 /* Sprite Clock Toy TestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sprite Clock Toy TestTests-Info.plist"; sourceTree = "<group>"; };
 		F50146F31953005600459A79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F50146F51953005600459A79 /* Sprite_Clock_Toy_TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sprite_Clock_Toy_TestTests.m; sourceTree = "<group>"; };
+		F50146FF1953009500459A79 /* ToyImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = ToyImages.atlas; sourceTree = "<group>"; };
+		F501470A1953039500459A79 /* iPhoneTanshin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneTanshin.png; sourceTree = "<group>"; };
+		F501470B1953039500459A79 /* iPhoneChaushin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneChaushin.png; sourceTree = "<group>"; };
+		F501470C1953039500459A79 /* iPhoneCenterPoint@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhoneCenterPoint@2x.png"; sourceTree = "<group>"; };
+		F501470D1953039500459A79 /* iPhoneCenterPoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneCenterPoint.png; sourceTree = "<group>"; };
+		F5014713195303F600459A79 /* LandscapeCenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LandscapeCenter.png; sourceTree = "<group>"; };
+		F5014714195303F600459A79 /* LandscapeCenter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LandscapeCenter@2x.png"; sourceTree = "<group>"; };
+		F5014715195303F600459A79 /* LandscapeChoushin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LandscapeChoushin.png; sourceTree = "<group>"; };
+		F5014716195303F600459A79 /* LandscapeChoushin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LandscapeChoushin@2x.png"; sourceTree = "<group>"; };
+		F5014717195303F600459A79 /* LandscapeTanshin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LandscapeTanshin.png; sourceTree = "<group>"; };
+		F5014718195303F600459A79 /* LandscapeTanshin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LandscapeTanshin@2x.png"; sourceTree = "<group>"; };
+		F50147211953046700459A79 /* Group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Group.png; sourceTree = "<group>"; };
+		F50147221953046700459A79 /* Group@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Group@2x.png"; sourceTree = "<group>"; };
+		F50147261953049200459A79 /* london_bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = london_bus.png; sourceTree = "<group>"; };
+		F50147271953049200459A79 /* london_bus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "london_bus@2x.png"; sourceTree = "<group>"; };
+		F501472B1953052400459A79 /* YHToy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHToy.h; sourceTree = "<group>"; };
+		F501472C1953052400459A79 /* YHToy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHToy.m; sourceTree = "<group>"; };
+		F501472D1953052400459A79 /* YHToyQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHToyQueue.h; sourceTree = "<group>"; };
+		F501472E1953052400459A79 /* YHToyQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHToyQueue.m; sourceTree = "<group>"; };
+		F501472F1953052400459A79 /* YHLondonbus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLondonbus.h; sourceTree = "<group>"; };
+		F50147301953052400459A79 /* YHLondonbus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLondonbus.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +170,18 @@
 				F50146DB1953005600459A79 /* ViewController.m */,
 				F50146DD1953005600459A79 /* MyScene.h */,
 				F50146DE1953005600459A79 /* MyScene.m */,
+				F501472B1953052400459A79 /* YHToy.h */,
+				F501472C1953052400459A79 /* YHToy.m */,
+				F501472D1953052400459A79 /* YHToyQueue.h */,
+				F501472E1953052400459A79 /* YHToyQueue.m */,
+				F501472F1953052400459A79 /* YHLondonbus.h */,
+				F50147301953052400459A79 /* YHLondonbus.m */,
 				F50146E01953005600459A79 /* Spaceship.png */,
 				F50146E21953005600459A79 /* Images.xcassets */,
+				F501472A195304A200459A79 /* LondonBus */,
+				F50147251953047700459A79 /* BackgroundImage */,
+				F50147121953039F00459A79 /* clockImage */,
+				F50146FF1953009500459A79 /* ToyImages.atlas */,
 				F50146C91953005600459A79 /* Supporting Files */,
 			);
 			path = "Sprite Clock Toy Test";
@@ -165,6 +214,58 @@
 				F50146F21953005600459A79 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F50147121953039F00459A79 /* clockImage */ = {
+			isa = PBXGroup;
+			children = (
+				F50147201953044300459A79 /* iPhoneDayTimeImage */,
+				F501471F1953040D00459A79 /* dayTimeImage */,
+			);
+			name = clockImage;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F501471F1953040D00459A79 /* dayTimeImage */ = {
+			isa = PBXGroup;
+			children = (
+				F5014714195303F600459A79 /* LandscapeCenter@2x.png */,
+				F5014715195303F600459A79 /* LandscapeChoushin.png */,
+				F5014716195303F600459A79 /* LandscapeChoushin@2x.png */,
+				F5014717195303F600459A79 /* LandscapeTanshin.png */,
+				F5014713195303F600459A79 /* LandscapeCenter.png */,
+				F5014718195303F600459A79 /* LandscapeTanshin@2x.png */,
+			);
+			name = dayTimeImage;
+			sourceTree = "<group>";
+		};
+		F50147201953044300459A79 /* iPhoneDayTimeImage */ = {
+			isa = PBXGroup;
+			children = (
+				F501470A1953039500459A79 /* iPhoneTanshin.png */,
+				F501470B1953039500459A79 /* iPhoneChaushin.png */,
+				F501470C1953039500459A79 /* iPhoneCenterPoint@2x.png */,
+				F501470D1953039500459A79 /* iPhoneCenterPoint.png */,
+			);
+			name = iPhoneDayTimeImage;
+			sourceTree = "<group>";
+		};
+		F50147251953047700459A79 /* BackgroundImage */ = {
+			isa = PBXGroup;
+			children = (
+				F50147221953046700459A79 /* Group@2x.png */,
+				F50147211953046700459A79 /* Group.png */,
+			);
+			name = BackgroundImage;
+			sourceTree = "<group>";
+		};
+		F501472A195304A200459A79 /* LondonBus */ = {
+			isa = PBXGroup;
+			children = (
+				F50147261953049200459A79 /* london_bus.png */,
+				F50147271953049200459A79 /* london_bus@2x.png */,
+			);
+			name = LondonBus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,10 +344,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50147241953046700459A79 /* Group@2x.png in Resources */,
+				F50147111953039500459A79 /* iPhoneCenterPoint.png in Resources */,
+				F50147281953049200459A79 /* london_bus.png in Resources */,
 				F50146E11953005600459A79 /* Spaceship.png in Resources */,
+				F50147101953039500459A79 /* iPhoneCenterPoint@2x.png in Resources */,
+				F50147291953049200459A79 /* london_bus@2x.png in Resources */,
+				F50147231953046700459A79 /* Group.png in Resources */,
+				F501471A195303F600459A79 /* LandscapeCenter@2x.png in Resources */,
+				F501471E195303F600459A79 /* LandscapeTanshin@2x.png in Resources */,
 				F50146E31953005600459A79 /* Images.xcassets in Resources */,
+				F5014719195303F600459A79 /* LandscapeCenter.png in Resources */,
 				F50146D91953005600459A79 /* Main_iPad.storyboard in Resources */,
+				F501470F1953039500459A79 /* iPhoneChaushin.png in Resources */,
 				F50146D61953005600459A79 /* Main_iPhone.storyboard in Resources */,
+				F501471D195303F600459A79 /* LandscapeTanshin.png in Resources */,
+				F501471B195303F600459A79 /* LandscapeChoushin.png in Resources */,
+				F501470E1953039500459A79 /* iPhoneTanshin.png in Resources */,
+				F501471C195303F600459A79 /* LandscapeChoushin@2x.png in Resources */,
+				F50147001953009500459A79 /* ToyImages.atlas in Resources */,
 				F50146CD1953005600459A79 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +385,10 @@
 				F50146DF1953005600459A79 /* MyScene.m in Sources */,
 				F50146DC1953005600459A79 /* ViewController.m in Sources */,
 				F50146D31953005600459A79 /* AppDelegate.m in Sources */,
+				F50147311953052400459A79 /* YHToy.m in Sources */,
 				F50146CF1953005600459A79 /* main.m in Sources */,
+				F50147331953052400459A79 /* YHLondonbus.m in Sources */,
+				F50147321953052400459A79 /* YHToyQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
