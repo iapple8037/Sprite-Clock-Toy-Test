@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F50146C11953005600459A79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50146C01953005600459A79 /* Foundation.framework */; };
+		F50146C31953005600459A79 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50146C21953005600459A79 /* CoreGraphics.framework */; };
+		F50146C51953005600459A79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50146C41953005600459A79 /* UIKit.framework */; };
+		F50146C71953005600459A79 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50146C61953005600459A79 /* SpriteKit.framework */; };
+		F50146CD1953005600459A79 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F50146CB1953005600459A79 /* InfoPlist.strings */; };
+		F50146CF1953005600459A79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F50146CE1953005600459A79 /* main.m */; };
+		F50146D31953005600459A79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F50146D21953005600459A79 /* AppDelegate.m */; };
+		F50146D61953005600459A79 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50146D41953005600459A79 /* Main_iPhone.storyboard */; };
+		F50146D91953005600459A79 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50146D71953005600459A79 /* Main_iPad.storyboard */; };
+		F50146DC1953005600459A79 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50146DB1953005600459A79 /* ViewController.m */; };
+		F50146DF1953005600459A79 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F50146DE1953005600459A79 /* MyScene.m */; };
+		F50146E11953005600459A79 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = F50146E01953005600459A79 /* Spaceship.png */; };
+		F50146E31953005600459A79 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50146E21953005600459A79 /* Images.xcassets */; };
+		F50146EA1953005600459A79 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50146E91953005600459A79 /* XCTest.framework */; };
+		F50146EB1953005600459A79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50146C01953005600459A79 /* Foundation.framework */; };
+		F50146EC1953005600459A79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50146C41953005600459A79 /* UIKit.framework */; };
+		F50146F41953005600459A79 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F50146F21953005600459A79 /* InfoPlist.strings */; };
+		F50146F61953005600459A79 /* Sprite_Clock_Toy_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F50146F51953005600459A79 /* Sprite_Clock_Toy_TestTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F50146ED1953005600459A79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F50146B51953005600459A79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F50146BC1953005600459A79;
+			remoteInfo = "Sprite Clock Toy Test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F50146BD1953005600459A79 /* Sprite Clock Toy Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sprite Clock Toy Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50146C01953005600459A79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F50146C21953005600459A79 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F50146C41953005600459A79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F50146C61953005600459A79 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		F50146CA1953005600459A79 /* Sprite Clock Toy Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sprite Clock Toy Test-Info.plist"; sourceTree = "<group>"; };
+		F50146CC1953005600459A79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F50146CE1953005600459A79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F50146D01953005600459A79 /* Sprite Clock Toy Test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sprite Clock Toy Test-Prefix.pch"; sourceTree = "<group>"; };
+		F50146D11953005600459A79 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F50146D21953005600459A79 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F50146D51953005600459A79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		F50146D81953005600459A79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		F50146DA1953005600459A79 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F50146DB1953005600459A79 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F50146DD1953005600459A79 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		F50146DE1953005600459A79 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		F50146E01953005600459A79 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		F50146E21953005600459A79 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F50146E81953005600459A79 /* Sprite Clock Toy TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sprite Clock Toy TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50146E91953005600459A79 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F50146F11953005600459A79 /* Sprite Clock Toy TestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sprite Clock Toy TestTests-Info.plist"; sourceTree = "<group>"; };
+		F50146F31953005600459A79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F50146F51953005600459A79 /* Sprite_Clock_Toy_TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sprite_Clock_Toy_TestTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F50146BA1953005600459A79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50146C31953005600459A79 /* CoreGraphics.framework in Frameworks */,
+				F50146C51953005600459A79 /* UIKit.framework in Frameworks */,
+				F50146C71953005600459A79 /* SpriteKit.framework in Frameworks */,
+				F50146C11953005600459A79 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50146E51953005600459A79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50146EA1953005600459A79 /* XCTest.framework in Frameworks */,
+				F50146EC1953005600459A79 /* UIKit.framework in Frameworks */,
+				F50146EB1953005600459A79 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F50146B41953005600459A79 = {
+			isa = PBXGroup;
+			children = (
+				F50146C81953005600459A79 /* Sprite Clock Toy Test */,
+				F50146EF1953005600459A79 /* Sprite Clock Toy TestTests */,
+				F50146BF1953005600459A79 /* Frameworks */,
+				F50146BE1953005600459A79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F50146BE1953005600459A79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F50146BD1953005600459A79 /* Sprite Clock Toy Test.app */,
+				F50146E81953005600459A79 /* Sprite Clock Toy TestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F50146BF1953005600459A79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F50146C01953005600459A79 /* Foundation.framework */,
+				F50146C21953005600459A79 /* CoreGraphics.framework */,
+				F50146C41953005600459A79 /* UIKit.framework */,
+				F50146C61953005600459A79 /* SpriteKit.framework */,
+				F50146E91953005600459A79 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F50146C81953005600459A79 /* Sprite Clock Toy Test */ = {
+			isa = PBXGroup;
+			children = (
+				F50146D11953005600459A79 /* AppDelegate.h */,
+				F50146D21953005600459A79 /* AppDelegate.m */,
+				F50146D41953005600459A79 /* Main_iPhone.storyboard */,
+				F50146D71953005600459A79 /* Main_iPad.storyboard */,
+				F50146DA1953005600459A79 /* ViewController.h */,
+				F50146DB1953005600459A79 /* ViewController.m */,
+				F50146DD1953005600459A79 /* MyScene.h */,
+				F50146DE1953005600459A79 /* MyScene.m */,
+				F50146E01953005600459A79 /* Spaceship.png */,
+				F50146E21953005600459A79 /* Images.xcassets */,
+				F50146C91953005600459A79 /* Supporting Files */,
+			);
+			path = "Sprite Clock Toy Test";
+			sourceTree = "<group>";
+		};
+		F50146C91953005600459A79 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F50146CA1953005600459A79 /* Sprite Clock Toy Test-Info.plist */,
+				F50146CB1953005600459A79 /* InfoPlist.strings */,
+				F50146CE1953005600459A79 /* main.m */,
+				F50146D01953005600459A79 /* Sprite Clock Toy Test-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F50146EF1953005600459A79 /* Sprite Clock Toy TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				F50146F51953005600459A79 /* Sprite_Clock_Toy_TestTests.m */,
+				F50146F01953005600459A79 /* Supporting Files */,
+			);
+			path = "Sprite Clock Toy TestTests";
+			sourceTree = "<group>";
+		};
+		F50146F01953005600459A79 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F50146F11953005600459A79 /* Sprite Clock Toy TestTests-Info.plist */,
+				F50146F21953005600459A79 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F50146BC1953005600459A79 /* Sprite Clock Toy Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50146F91953005600459A79 /* Build configuration list for PBXNativeTarget "Sprite Clock Toy Test" */;
+			buildPhases = (
+				F50146B91953005600459A79 /* Sources */,
+				F50146BA1953005600459A79 /* Frameworks */,
+				F50146BB1953005600459A79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sprite Clock Toy Test";
+			productName = "Sprite Clock Toy Test";
+			productReference = F50146BD1953005600459A79 /* Sprite Clock Toy Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F50146E71953005600459A79 /* Sprite Clock Toy TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50146FC1953005600459A79 /* Build configuration list for PBXNativeTarget "Sprite Clock Toy TestTests" */;
+			buildPhases = (
+				F50146E41953005600459A79 /* Sources */,
+				F50146E51953005600459A79 /* Frameworks */,
+				F50146E61953005600459A79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F50146EE1953005600459A79 /* PBXTargetDependency */,
+			);
+			name = "Sprite Clock Toy TestTests";
+			productName = "Sprite Clock Toy TestTests";
+			productReference = F50146E81953005600459A79 /* Sprite Clock Toy TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F50146B51953005600459A79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = YANAGIDA;
+				TargetAttributes = {
+					F50146E71953005600459A79 = {
+						TestTargetID = F50146BC1953005600459A79;
+					};
+				};
+			};
+			buildConfigurationList = F50146B81953005600459A79 /* Build configuration list for PBXProject "Sprite Clock Toy Test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F50146B41953005600459A79;
+			productRefGroup = F50146BE1953005600459A79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F50146BC1953005600459A79 /* Sprite Clock Toy Test */,
+				F50146E71953005600459A79 /* Sprite Clock Toy TestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F50146BB1953005600459A79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50146E11953005600459A79 /* Spaceship.png in Resources */,
+				F50146E31953005600459A79 /* Images.xcassets in Resources */,
+				F50146D91953005600459A79 /* Main_iPad.storyboard in Resources */,
+				F50146D61953005600459A79 /* Main_iPhone.storyboard in Resources */,
+				F50146CD1953005600459A79 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50146E61953005600459A79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50146F41953005600459A79 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F50146B91953005600459A79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50146DF1953005600459A79 /* MyScene.m in Sources */,
+				F50146DC1953005600459A79 /* ViewController.m in Sources */,
+				F50146D31953005600459A79 /* AppDelegate.m in Sources */,
+				F50146CF1953005600459A79 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50146E41953005600459A79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50146F61953005600459A79 /* Sprite_Clock_Toy_TestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F50146EE1953005600459A79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F50146BC1953005600459A79 /* Sprite Clock Toy Test */;
+			targetProxy = F50146ED1953005600459A79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F50146CB1953005600459A79 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F50146CC1953005600459A79 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F50146D41953005600459A79 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F50146D51953005600459A79 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		F50146D71953005600459A79 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F50146D81953005600459A79 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		F50146F21953005600459A79 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F50146F31953005600459A79 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F50146F71953005600459A79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F50146F81953005600459A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F50146FA1953005600459A79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sprite Clock Toy Test/Sprite Clock Toy Test-Prefix.pch";
+				INFOPLIST_FILE = "Sprite Clock Toy Test/Sprite Clock Toy Test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F50146FB1953005600459A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sprite Clock Toy Test/Sprite Clock Toy Test-Prefix.pch";
+				INFOPLIST_FILE = "Sprite Clock Toy Test/Sprite Clock Toy Test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F50146FD1953005600459A79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sprite Clock Toy Test.app/Sprite Clock Toy Test";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sprite Clock Toy Test/Sprite Clock Toy Test-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Sprite Clock Toy TestTests/Sprite Clock Toy TestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F50146FE1953005600459A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sprite Clock Toy Test.app/Sprite Clock Toy Test";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sprite Clock Toy Test/Sprite Clock Toy Test-Prefix.pch";
+				INFOPLIST_FILE = "Sprite Clock Toy TestTests/Sprite Clock Toy TestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F50146B81953005600459A79 /* Build configuration list for PBXProject "Sprite Clock Toy Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50146F71953005600459A79 /* Debug */,
+				F50146F81953005600459A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50146F91953005600459A79 /* Build configuration list for PBXNativeTarget "Sprite Clock Toy Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50146FA1953005600459A79 /* Debug */,
+				F50146FB1953005600459A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F50146FC1953005600459A79 /* Build configuration list for PBXNativeTarget "Sprite Clock Toy TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50146FD1953005600459A79 /* Debug */,
+				F50146FE1953005600459A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F50146B51953005600459A79 /* Project object */;
+}
