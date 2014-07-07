@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C1F47951965A29E006673ED /* YHToyDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F47941965A29E006673ED /* YHToyDown.m */; };
 		F50146C11953005600459A79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50146C01953005600459A79 /* Foundation.framework */; };
 		F50146C31953005600459A79 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50146C21953005600459A79 /* CoreGraphics.framework */; };
 		F50146C51953005600459A79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50146C41953005600459A79 /* UIKit.framework */; };
@@ -56,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C1F47931965A29E006673ED /* YHToyDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHToyDown.h; sourceTree = "<group>"; };
+		9C1F47941965A29E006673ED /* YHToyDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHToyDown.m; sourceTree = "<group>"; };
 		F50146BD1953005600459A79 /* Sprite Clock Toy Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sprite Clock Toy Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50146C01953005600459A79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F50146C21953005600459A79 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -172,6 +175,8 @@
 				F50146DE1953005600459A79 /* MyScene.m */,
 				F501472B1953052400459A79 /* YHToy.h */,
 				F501472C1953052400459A79 /* YHToy.m */,
+				9C1F47931965A29E006673ED /* YHToyDown.h */,
+				9C1F47941965A29E006673ED /* YHToyDown.m */,
 				F501472D1953052400459A79 /* YHToyQueue.h */,
 				F501472E1953052400459A79 /* YHToyQueue.m */,
 				F501472F1953052400459A79 /* YHLondonbus.h */,
@@ -385,6 +390,7 @@
 				F50146DF1953005600459A79 /* MyScene.m in Sources */,
 				F50146DC1953005600459A79 /* ViewController.m in Sources */,
 				F50146D31953005600459A79 /* AppDelegate.m in Sources */,
+				9C1F47951965A29E006673ED /* YHToyDown.m in Sources */,
 				F50147311953052400459A79 /* YHToy.m in Sources */,
 				F50146CF1953005600459A79 /* main.m in Sources */,
 				F50147331953052400459A79 /* YHLondonbus.m in Sources */,
@@ -605,6 +611,7 @@
 				F50146FB1953005600459A79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F50146FC1953005600459A79 /* Build configuration list for PBXNativeTarget "Sprite Clock Toy TestTests" */ = {
 			isa = XCConfigurationList;
@@ -613,6 +620,7 @@
 				F50146FE1953005600459A79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

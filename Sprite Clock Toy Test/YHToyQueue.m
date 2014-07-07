@@ -67,9 +67,9 @@
     /**
      *  toyの前進して行く動きのメソッド
      */
-    SKAction *actionDelay = [SKAction waitForDuration:4.0];//まずアクションを起こすタイミングを計る
-    SKAction *actionMove = [SKAction moveToX:-350 duration:20];
-//    SKAction *actionMove = [SKAction moveTo:CGPointMake(-self.frame.size.width/3, -self.frame.size.height/3) duration:25.0f];
+    SKAction *actionDelay = [SKAction waitForDuration:2.0];//まずアクションを起こすタイミングを計る
+    SKAction *actionMove = [SKAction moveTo:CGPointMake(-350, self.position.y) duration:25];
+
     SKAction * actiomMoveDone = [SKAction removeFromParent];
 
     [self runAction:[SKAction sequence:@[actionDelay , actionMove , actiomMoveDone]]];

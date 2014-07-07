@@ -1,16 +1,16 @@
 //
-//  YHToy.m
-//  Toy Test2
+//  YHToyDown.m
+//  Sprite Clock Toy Test
 //
-//  Created by YANAGIDA on 2014/06/14.
+//  Created by HIROKI on 2014/07/03.
 //  Copyright (c) 2014年 YANAGIDA. All rights reserved.
 //
 
-#import "YHToy.h"
+#import "YHToyDown.h"
 
-@implementation YHToy
+@implementation YHToyDown
 
-+(id)toy
++(id)toyDown
 {
     NSMutableArray *walkingFrames = [NSMutableArray array];
     SKTextureAtlas *toyAnimatedAtlas = [SKTextureAtlas atlasNamed:@"ToyImages"];
@@ -23,14 +23,15 @@
     _toyWalkingFrames = walkingFrames;
     
     SKTexture *temp = _toyWalkingFrames[0];
-    YHToy *toy = [YHToy spriteNodeWithTexture:temp];
-    toy.name = @"toy";
-    [toy runAction:[SKAction repeatActionForever:[SKAction animateWithTextures:_toyWalkingFrames
+    YHToyDown *toyDown = [YHToyDown spriteNodeWithTexture:temp];
+    toyDown.name = @"toyDown";
+    [toyDown runAction:[SKAction repeatActionForever:[SKAction animateWithTextures:_toyWalkingFrames
                                                                   timePerFrame:0.2f
                                                                         resize:NO
                                                                        restore:YES]]withKey:@"walkingInPlaceToy"];
-    toy.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:toy.size];//一人の騎兵隊に重力をつける
-    return toy;
+    toyDown.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:toyDown.size];//一人の騎兵隊に重力をつける
+    return toyDown;
+
 }
 
 -(void)walkingToy
@@ -39,11 +40,6 @@
     SKAction * actiomMoveDone = [SKAction removeFromParent];
     [self runAction:[SKAction sequence:@[actionMove , actiomMoveDone]]];
     
-}
-
--(void)stopWalkingToy
-{
-    [self removeActionForKey:@"walkingToy"];//walkingToyのsctionMoveアクションを止める。
 }
 
 -(void)jump

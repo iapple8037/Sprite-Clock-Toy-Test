@@ -20,9 +20,10 @@
 
 -(void)driveLondonbus
 {
-    SKAction *actionDelay = [SKAction waitForDuration:4.0];
-    SKAction *actionMove = [SKAction moveToX:-350 duration:6];
-    [self runAction:[SKAction sequence:@[actionDelay , actionMove]]];
+    SKAction *actionDelay = [SKAction waitForDuration:2.0];
+    SKAction *actionMove = [SKAction moveToX:-500 duration:12];
+    SKAction *moveDone = [SKAction removeFromParent];
+    [self runAction:[SKAction sequence:@[actionDelay , actionMove, moveDone]]];
 }
 
 @end

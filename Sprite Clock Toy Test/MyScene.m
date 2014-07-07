@@ -11,6 +11,7 @@
 #import "YHToy.h"
 #import "YHToyQueue.h"
 #import "YHLondonbus.h"
+#import "YHToyDown.h"
 
 #define TOY_WALKING_POSITION self.frame.size.height/3 //toyが出てくるy軸の位置
 #define TOY_WALKING_POSITION_W self.frame.size.width/2
@@ -35,11 +36,13 @@
     SKSpriteNode *_choushin;
     
     YHToy *toy;
+    YHToyDown *toyDown;
     CGPoint _touchPoint;
     NSInteger animationHour;
     NSInteger animateMin;
     NSInteger animateSec;
     //    NSTimer *timerAnimation;
+    int count;
 }
 
 
@@ -56,19 +59,10 @@
                                         repeats:YES];        // 繰り返し
     }
     
-//    if (animationHour == 0 && animateMin == 27) {
-//
-//    [self createLondonbus];
-    //        [self createToyQueue];
-//    [self createToy];
-//    [self createGround];
-//    }
-    
-
     [self addClockImages];
     [self createGround];
-    [self createLondonbus];
-    [self createToy];
+//    [self createLondonbus];
+//    [self createToy];
     
     return self;
 }
@@ -119,10 +113,10 @@
     NSInteger min = [todayComponents minute];
     NSInteger sec = [todayComponents second];
     
-    animationHour = hour;
+    animationHour = hour % 12;
     animateMin = min;
     animateSec = sec;
-    
+    NSLog(@"%d", animationHour);
     NSLog(@"時間は%d", hour);
     NSLog(@"分は%d", min);
     //    NSLog(@"秒は%d", second);
@@ -134,9 +128,35 @@
     SKAction *rotateTanshin = [SKAction rotateToAngle:M_PI * -2 * fineHour / 12.0 duration:0.1 shortestUnitArc:NO];
     [_tanshin runAction:rotateTanshin];
     
-    SKAction *rotateChoushin = [SKAction rotateToAngle:M_PI * -2 * min / 60.0 duration:0.1 shortestUnitArc:NO];
+    SKAction *rotateChoushin = [SKAction rotateToAngle:M_PI * -2 * min / 60.0 duration:0.1 shortestUnitArc:YES];
     [_choushin runAction:rotateChoushin];
     
+    [self setUpAnimation];
+    
+}
+
+//時間によってアニメーションを使い分ける。タイマーから呼び出されるメソッド-(void)driveClock:(NSTimer*)timer
+-(void)setUpAnimation
+{
+    NSLog(@"アニメーションです");
+    switch (animationHour) {
+        case 1:
+        case 4:
+        case 7:
+        case 10:
+            if (animateMin == 00) {
+                [self createLondonbus];
+            }
+            break;
+        case 2:
+        case 5:
+        case 8:
+        case 11:
+            if (animateMin == 00) {
+                [self createToy];
+            }
+            break;
+    }
 }
 
 
@@ -144,25 +164,68 @@
 //ロンドンバスをのせる
 -(void)createLondonbus
 {
-    london_bus = [YHLondonbus london_bus];
-    london_bus.position = CGPointMake(self.frame.size.width/2 + london_bus.size.width/2, -TOY_WALKING_POSITION);
-    london_bus.zPosition = 10;
-    [self addChild:london_bus];
-    
-    [london_bus driveLondonbus];
+    if (!london_bus) {
+        london_bus = [YHLondonbus london_bus];
+        london_bus.position = CGPointMake(self.frame.size.width/2 + london_bus.size.width/2, -TOY_WALKING_POSITION);
+        london_bus.zPosition = 10;
+        [self addChild:london_bus];
+        
+        [london_bus driveLondonbus];
+
+    }
 }
 
-//連続の騎兵隊の行進
+//連続の騎兵隊の行進 ,12,3,6,9時丁度に動作する。
 -(void)createToyQueue
 {
-    toyQueue = [YHToyQueue toyQueue];
-    //右端のチョットスクリーンから外れたところかにToyを設定
-    toyQueue.position = CGPointMake(self.frame.size.width/2 + toyQueue.size.width/2, -TOY_WALKING_POSITION);
-    
-    [self addChild:toyQueue];
-    
-    [toyQueue walkingToy];
-    
+//    if (!toyQueue) {
+//    }
+
+    if (animationHour == 0 && animateMin == 00) {
+        count+=1;
+        NSLog(@"12時の回数は%d", count);
+        if (count < 13 ) {
+            toyQueue = [YHToyQueue toyQueue];
+            //右端のチョットスクリーンから外れたところかにToyを設定
+            toyQueue.position = CGPointMake(self.frame.size.width/2 + toyQueue.size.width/2, -TOY_WALKING_POSITION);
+            
+            [self addChild:toyQueue];
+            [toyQueue walkingToy];
+        }
+    }else if (animationHour == 3 && animateMin == 00){
+        count+=1;
+        NSLog(@"3時の回数は%d", count);
+        if (count < 4 ) {
+            toyQueue = [YHToyQueue toyQueue];
+            //右端のチョットスクリーンから外れたところかにToyを設定
+            toyQueue.position = CGPointMake(self.frame.size.width/2 + toyQueue.size.width/2, -TOY_WALKING_POSITION);
+            
+            [self addChild:toyQueue];
+            [toyQueue walkingToy];
+        }
+    }else if (animationHour == 6 && animateMin == 00){
+        count+=1;
+        NSLog(@"6時の回数は%d", count);
+        if (count < 7 ) {
+            toyQueue = [YHToyQueue toyQueue];
+            //右端のチョットスクリーンから外れたところかにToyを設定
+            toyQueue.position = CGPointMake(self.frame.size.width/2 + toyQueue.size.width/2, -TOY_WALKING_POSITION);
+            
+            [self addChild:toyQueue];
+            [toyQueue walkingToy];
+        }
+    }else if (animationHour == 9 && animateMin == 00){
+        count+=1;
+        NSLog(@"9時の回数は%d", count);
+        if (count < 10 ) {
+            toyQueue = [YHToyQueue toyQueue];
+            //右端のチョットスクリーンから外れたところかにToyを設定
+            toyQueue.position = CGPointMake(self.frame.size.width/2 + toyQueue.size.width/2, -TOY_WALKING_POSITION);
+            
+            [self addChild:toyQueue];
+            [toyQueue walkingToy];
+        }
+    }
 }
 
 
@@ -170,24 +233,25 @@
 
 //次に最後のアップデートからの時間毎のフレームをコールするメソッドを追加します。このメソッドはデフォルトではコールされないので、このメソッドをコールする為の別のメソッドを用意します。
 /**
- *  ここではlastSpawnTimeIntervalに最後のアップデートが実行されてからの時間が追加されています。１秒を越えるとtoyを生成して時間をリセットします。
+ *  ここではlastSpawnTimeIntervalに最後のアップデートが実行されてからの時間が追加されています。3秒を越えるとtoyQueueを生成して時間をリセットします。
  */
 
 - (void) updateWithTimeSinceLastUpdate:(CFTimeInterval)timeSiceLast
 {
     self.lastSpawnTimeInterval += timeSiceLast;
-    if (self.lastSpawnTimeInterval > 4 ) {
+    if (self.lastSpawnTimeInterval > 3 ) {
         self.lastSpawnTimeInterval = 0;
 
         [self createToyQueue];
     }
 }
+//
 
-
-//以下のメソッドを追加して上記のメソッドをコールします:
-//- (void)update:(NSTimeInterval)currentTime
+//
+////以下のメソッドを追加して上記のメソッドをコールします:
 -(void)update:(CFTimeInterval)currentTime
 {
+   
     //もし60fpsに落ちても常に同じディスタンスで動くようにする
     CFTimeInterval timeSinceLast = currentTime - self.lastUpdateTimeInterval;
     self.lastUpdateTimeInterval = currentTime;
@@ -196,29 +260,50 @@
         self.lastUpdateTimeInterval = currentTime;
     }
     [self updateWithTimeSinceLastUpdate:timeSinceLast];
+
 }
 
 
-// ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー　一人の騎兵隊
+// ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+//一人の騎兵隊
+
 -(void)createToy
 {
-    toy = [YHToy toy];
-    toy.position = CGPointMake(self.frame.size.width/2, -TOY_WALKING_POSITION);
-    [self addChild:toy];
-    
-    [toy walkingToy];
+    if (!toy) {
+        toy = [YHToy toy];
+        toy.position = CGPointMake(TOY_WALKING_POSITION_W, -self.frame.size.height/3 );
+        [self addChild:toy];
+        
+        [toy walkingToy];
+
+    }
 }
 
 -(void)createGround
 {
-    SKSpriteNode *ground = [SKSpriteNode spriteNodeWithColor:[SKColor clearColor] size:CGSizeMake(self.frame.size.width, 5)];
-    //    ground.position = CGPointMake(self.frame.size.width/2, TOY_WALKING_POSITION - toy.size.height/2);
-    ground.position = CGPointMake(0, -TOY_WALKING_POSITION - toy.size.height/2);
+    SKSpriteNode *ground = [SKSpriteNode spriteNodeWithColor:[SKColor clearColor] size:CGSizeMake(self.frame.size.width+60, 5)];
+    ground.position = CGPointMake(0, -self.frame.size.height/3 - 70 );
     ground.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:ground.size];
     ground.physicsBody.dynamic = NO;
     
     [self addChild:ground];
 }
+// ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+//一人の騎兵隊で6にぶつかってこける。
+-(void)createToyDown
+{
+    if (!toyDown) {
+        toyDown = [YHToyDown toyDown];
+        toyDown.position = CGPointMake(TOY_WALKING_POSITION_W, -self.frame.size.height/3);
+        [self addChild:toyDown];
+        
+        [toyDown walkingToy];
+    }
+}
+
+
+// ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {

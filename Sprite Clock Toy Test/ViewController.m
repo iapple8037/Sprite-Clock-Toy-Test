@@ -14,6 +14,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [UIApplication sharedApplication].idleTimerDisabled = YES;//スリープさせない
 
     // Configure the view.
     SKView * skView = (SKView *)self.view;
@@ -22,7 +23,8 @@
     
     // Create and configure the scene.
     SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
+//    scene.scaleMode = SKSceneScaleModeAspectFill;
+    scene.scaleMode = SKSceneScaleModeResizeFill;
     
     // Present the scene.
     [skView presentScene:scene];
